@@ -13,7 +13,5 @@ More cleanup to come.
 
 Notes:
 Make sure you have the VEX IQ Smart Radio firmware installed
-
 Make sure you have the RobotC Smart Radio fireware installed
-
 Exchanging Data did not work while I was debugging in RobotC, so VEX IQ brain needs to not be connected to PC? Very odd.
