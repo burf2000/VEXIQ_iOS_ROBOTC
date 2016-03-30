@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		919BCB851CA43A47003BA02C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919BCB841CA43A47003BA02C /* AppDelegate.swift */; };
+		919BCB871CA43A47003BA02C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919BCB861CA43A47003BA02C /* ViewController.swift */; };
+		919BCB8A1CA43A47003BA02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919BCB881CA43A47003BA02C /* Main.storyboard */; };
+		919BCB8C1CA43A47003BA02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919BCB8B1CA43A47003BA02C /* Assets.xcassets */; };
+		919BCB8F1CA43A47003BA02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 919BCB8D1CA43A47003BA02C /* LaunchScreen.storyboard */; };
+		919BCB971CA43A5B003BA02C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919BCB961CA43A5B003BA02C /* CoreBluetooth.framework */; };
+		919BCBA41CA43A97003BA02C /* SmartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BCB9C1CA43A97003BA02C /* SmartController.m */; };
+		919BCBA51CA43A97003BA02C /* SmartLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BCB9E1CA43A97003BA02C /* SmartLink.m */; };
+		919BCBA61CA43A97003BA02C /* SmartMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BCBA01CA43A97003BA02C /* SmartMessage.m */; };
+		919BCBA71CA43A97003BA02C /* SmartRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 919BCBA21CA43A97003BA02C /* SmartRadio.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		919BCB811CA43A47003BA02C /* VexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		919BCB841CA43A47003BA02C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		919BCB861CA43A47003BA02C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		919BCB891CA43A47003BA02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		919BCB8B1CA43A47003BA02C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		919BCB8E1CA43A47003BA02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		919BCB901CA43A47003BA02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919BCB961CA43A5B003BA02C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		919BCB991CA43A96003BA02C /* VexApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VexApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		919BCB9A1CA43A97003BA02C /* RobotCOpcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotCOpcodes.h; sourceTree = "<group>"; };
+		919BCB9B1CA43A97003BA02C /* SmartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartController.h; sourceTree = "<group>"; };
+		919BCB9C1CA43A97003BA02C /* SmartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartController.m; sourceTree = "<group>"; };
+		919BCB9D1CA43A97003BA02C /* SmartLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartLink.h; sourceTree = "<group>"; };
+		919BCB9E1CA43A97003BA02C /* SmartLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartLink.m; sourceTree = "<group>"; };
+		919BCB9F1CA43A97003BA02C /* SmartMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartMessage.h; sourceTree = "<group>"; };
+		919BCBA01CA43A97003BA02C /* SmartMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartMessage.m; sourceTree = "<group>"; };
+		919BCBA11CA43A97003BA02C /* SmartRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartRadio.h; sourceTree = "<group>"; };
+		919BCBA21CA43A97003BA02C /* SmartRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartRadio.m; sourceTree = "<group>"; };
+		919BCBA31CA43A97003BA02C /* VexCDCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VexCDCMessage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		919BCB7E1CA43A47003BA02C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919BCB971CA43A5B003BA02C /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		919BCB781CA43A47003BA02C = {
+			isa = PBXGroup;
+			children = (
+				919BCB961CA43A5B003BA02C /* CoreBluetooth.framework */,
+				919BCB831CA43A47003BA02C /* VexApp */,
+				919BCB821CA43A47003BA02C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		919BCB821CA43A47003BA02C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				919BCB811CA43A47003BA02C /* VexApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		919BCB831CA43A47003BA02C /* VexApp */ = {
+			isa = PBXGroup;
+			children = (
+				919BCB841CA43A47003BA02C /* AppDelegate.swift */,
+				919BCB981CA43A88003BA02C /* Smart Radio */,
+				919BCB861CA43A47003BA02C /* ViewController.swift */,
+				919BCB881CA43A47003BA02C /* Main.storyboard */,
+				919BCB8B1CA43A47003BA02C /* Assets.xcassets */,
+				919BCB8D1CA43A47003BA02C /* LaunchScreen.storyboard */,
+				919BCB901CA43A47003BA02C /* Info.plist */,
+			);
+			path = VexApp;
+			sourceTree = "<group>";
+		};
+		919BCB981CA43A88003BA02C /* Smart Radio */ = {
+			isa = PBXGroup;
+			children = (
+				919BCB9A1CA43A97003BA02C /* RobotCOpcodes.h */,
+				919BCB9B1CA43A97003BA02C /* SmartController.h */,
+				919BCB9C1CA43A97003BA02C /* SmartController.m */,
+				919BCB9D1CA43A97003BA02C /* SmartLink.h */,
+				919BCB9E1CA43A97003BA02C /* SmartLink.m */,
+				919BCB9F1CA43A97003BA02C /* SmartMessage.h */,
+				919BCBA01CA43A97003BA02C /* SmartMessage.m */,
+				919BCBA11CA43A97003BA02C /* SmartRadio.h */,
+				919BCBA21CA43A97003BA02C /* SmartRadio.m */,
+				919BCBA31CA43A97003BA02C /* VexCDCMessage.h */,
+				919BCB991CA43A96003BA02C /* VexApp-Bridging-Header.h */,
+			);
+			name = "Smart Radio";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		919BCB801CA43A47003BA02C /* VexApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919BCB931CA43A47003BA02C /* Build configuration list for PBXNativeTarget "VexApp" */;
+			buildPhases = (
+				919BCB7D1CA43A47003BA02C /* Sources */,
+				919BCB7E1CA43A47003BA02C /* Frameworks */,
+				919BCB7F1CA43A47003BA02C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VexApp;
+			productName = VexApp;
+			productReference = 919BCB811CA43A47003BA02C /* VexApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		919BCB791CA43A47003BA02C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Simon Burfield";
+				TargetAttributes = {
+					919BCB801CA43A47003BA02C = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2KK954NFHA;
+					};
+				};
+			};
+			buildConfigurationList = 919BCB7C1CA43A47003BA02C /* Build configuration list for PBXProject "VexApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 919BCB781CA43A47003BA02C;
+			productRefGroup = 919BCB821CA43A47003BA02C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				919BCB801CA43A47003BA02C /* VexApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		919BCB7F1CA43A47003BA02C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919BCB8F1CA43A47003BA02C /* LaunchScreen.storyboard in Resources */,
+				919BCB8C1CA43A47003BA02C /* Assets.xcassets in Resources */,
+				919BCB8A1CA43A47003BA02C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		919BCB7D1CA43A47003BA02C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919BCB871CA43A47003BA02C /* ViewController.swift in Sources */,
+				919BCB851CA43A47003BA02C /* AppDelegate.swift in Sources */,
+				919BCBA41CA43A97003BA02C /* SmartController.m in Sources */,
+				919BCBA61CA43A97003BA02C /* SmartMessage.m in Sources */,
+				919BCBA51CA43A97003BA02C /* SmartLink.m in Sources */,
+				919BCBA71CA43A97003BA02C /* SmartRadio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		919BCB881CA43A47003BA02C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919BCB891CA43A47003BA02C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		919BCB8D1CA43A47003BA02C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919BCB8E1CA43A47003BA02C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		919BCB911CA43A47003BA02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		919BCB921CA43A47003BA02C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		919BCB941CA43A47003BA02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VexApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burfdevelopment.VexApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VexApp/VexApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919BCB951CA43A47003BA02C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VexApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.burfdevelopment.VexApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VexApp/VexApp-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		919BCB7C1CA43A47003BA02C /* Build configuration list for PBXProject "VexApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919BCB911CA43A47003BA02C /* Debug */,
+				919BCB921CA43A47003BA02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919BCB931CA43A47003BA02C /* Build configuration list for PBXNativeTarget "VexApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919BCB941CA43A47003BA02C /* Debug */,
+				919BCB951CA43A47003BA02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 919BCB791CA43A47003BA02C /* Project object */;
+}
